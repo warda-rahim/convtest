@@ -1,4 +1,4 @@
-from setuptools import setup, packages
+from setuptools import setup, find_packages
 
 setup(
     name='ConvTest',
@@ -28,8 +28,6 @@ setup(
                     },
     entry_points='''
         [console_scripts]
-        cli=conv_test:generate_files
-        cli=conv_test:generate_folders
-        cli=conv_test:analyse_conv
+        conv_test=conv_test.cli:conv_test
         ''',
 )
