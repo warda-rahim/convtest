@@ -4,12 +4,12 @@ setup(
     name='ConvTest',
     version='1.0.0',
     description='Cutoff and kmesh convergence testing for ab initio '
-                 'solid-state calculations using VASP'),
+                 'solid-state calculations using VASP',
     long_description=open('README.md').read(),
     author='Warda Rahim',
     author_email='wardarahim25@gmail.com',
     url="https://github.com/warda-rahim/convergence-test",
-    license='MIT'
+    license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
