@@ -5,9 +5,9 @@ import os
 import numpy as np
 from pathlib import Path
 
-from ConvTest.write_files import prepare_incar, write_kpoints
-from ConvTest.conv_setup import make_cutoff_folders, make_kmesh_folders, copy_files, update_values
-from ConvTest.conv_plot import extract_cutoff_energies, extract_kmesh_energies, create_dataframes, print_converged_values, plot_conv
+from convtest.write_files import prepare_incar, write_kpoints
+from convtest.conv_setup import make_cutoff_folders, make_kmesh_folders, copy_files, update_values
+from convtest.conv_plot import extract_cutoff_energies, extract_kmesh_energies, create_dataframes, print_converged_values, plot_conv
 
 
 @click.group('conv_test')

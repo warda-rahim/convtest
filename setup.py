@@ -28,6 +28,6 @@ setup(
                     },
     entry_points='''
         [console_scripts]
-        conv_test=conv_test.cli:conv_test
+        conv_test=convtest.cli:conv_test
         ''',
 )
