@@ -5,9 +5,9 @@ import os
 import numpy as np
 from pathlib import Path
 
-from write_files import prepare_incar, write_kpoints
-from conv_setup import make_cutoff_folders, make_kmesh_folders, copy_files, update_values
-from conv_plot import extract_cutoff_energies, extract_kmesh_energies, create_dataframes, print_converged_values, plot_conv
+from ConvTest.write_files import prepare_incar, write_kpoints
+from ConvTest.conv_setup import make_cutoff_folders, make_kmesh_folders, copy_files, update_values
+from ConvTest.conv_plot import extract_cutoff_energies, extract_kmesh_energies, create_dataframes, print_converged_values, plot_conv
 
 
 @click.group('conv_test')
@@ -46,7 +46,6 @@ path_kmesh = os.path.join(os.getcwd(), 'kmesh_conv')
 
 
 @conv_test.command('generate_folders')
-@common_options
 @click.option('--emin', type=int, default=200, help='minimum encut for cutoff conv_test')
 @click.option('--emax', type=int, default=700, help='maximum encut for cutoff conv_test')
 @click.option('--estep', type=int, default=50, help='step for encut for cutoff conv_test')
