@@ -36,7 +36,7 @@ Requirements
 The command-line scripts are written in Python and require the following packages:
 
 <li> <a href="https://click.palletsprojects.com/en/7.x/">Click</a>
-<li> [NumPy] (https://numpy.org/)
-<li> [Pandas] (https://pypi.org/project/pandas/)
-<li> [Matplotlib] (https://matplotlib.org/)
-<li> [Pymatgen] (https://pymatgen.org/)
+<li> <a href="https://numpy.org/">NumPy</a>
+<li> <a href="https://pypi.org/project/pandas/">Pandas</a>
+<li> <a href="https://matplotlib.org/">Matplotlib</a>
+<li> <a href="https://pymatgen.org/">Pymatgen</a>
