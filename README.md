@@ -22,21 +22,21 @@ The code currently primarily supports VASP calculations.
 Usage
 -------------
 
-The scripts are intended to be used via the command-line. The built-in help (``-h``) option for each command provides a summary of available options.
+The scripts are intended to be used via the command-line. The built-in help (``--help``) option for each command provides a summary of available options.
 
 Currently, the commands provided are:
 
 -``generate_files``: For generating INCAR and KPOINTS input files.<br>
--``generate_folders``: For creating folders for cutoff and kmesh convergence tests, copying the files, and updating the cutoff and kmesh values. (Note: POSCAR (structure file) and POTCAR (pseudopotential file) need to be present in the folder for this command to work.)<br>
--``analyse_conv``: For extracting energies from VASP calculations, creating csv files, and plotting the convergence data. (Note: The command uses vasprun.xml files to extract energies and so complete DFT calculations performed using VASP is a prerequisite.)<br>
+-``generate_folders``: For creating folders for cutoff and kmesh convergence tests, copying the files, and updating the cutoff and kmesh values. **(Note: POSCAR (structure file) and POTCAR (pseudopotential file) need to be present in the folder for this command to work.)**<br>
+-``analyse_conv``: For extracting energies from VASP calculations, creating csv files, and plotting the convergence data. **(Note: The command uses vasprun.xml files to extract energies and so complete DFT calculations performed using VASP is a prerequisite.)**<br>
 
 Requirements
 ---------------
 
 The command-line scripts are written in Python and require the following packages:
 
-<li> Click
-<li> NumPy
-<li> Pandas
-<li> Matplotlib
-<li> Pymatgen
+<li> [Click] (https://click.palletsprojects.com/en/7.x/)
+<li> [NumPy] (https://numpy.org/)
+<li> [Pandas] (https://pypi.org/project/pandas/)
+<li> [Matplotlib] (https://matplotlib.org/)
+<li> [Pymatgen] (https://pymatgen.org/)
