@@ -18,6 +18,7 @@ The main features include:
 
 The code currently primarily supports VASP calculations.
 
+
 Usage
 -------------
 
@@ -25,6 +26,17 @@ The scripts are intended to be used via the command-line. The built-in help (``-
 
 Currently, the commands provided are:
 
--``generate_files``: For generating INCAR and KPOINTS input files.
--``generate_folders``: For creating folders for cutoff and kmesh convergence tests, copying the files, and updating the cutoff and kmesh values.
--``analyse_conv``: For extracting energies from VASP calculations, creating csv files, and plotting the convergence data.
+-``generate_files``: For generating INCAR and KPOINTS input files.<br>
+-``generate_folders``: For creating folders for cutoff and kmesh convergence tests, copying the files, and updating the cutoff and kmesh values. (Note: POSCAR (structure file) and POTCAR (pseudopotential file) need to be present in the folder for this command to work.)<br>
+-``analyse_conv``: For extracting energies from VASP calculations, creating csv files, and plotting the convergence data. (Note: The command uses vasprun.xml files to extract energies and so complete DFT calculations performed using VASP is a prerequisite.)<br>
+
+Requirements
+---------------
+
+The command-line scripts are written in Python and require the following packages:
+
+<li> Click
+<li> NumPy
+<li> Pandas
+<li> Matplotlib
+<li> Pymatgen
